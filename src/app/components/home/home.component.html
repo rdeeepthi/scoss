@@ -33,25 +33,25 @@
                         <p>{{details.icon}}</p>
                         <p>{{details.discription}}</p>
                         <p>{{details.keyfeatures}}</p>
-                        <button routerLink="/service">{{details.btn}}</button>
+                        <button class="{{details.btnClass}}" routerLink="{{details.btnClass}}">{{details.btn}}</button>
                     </section>
                 </ng-template>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Website Design and Development',icon:'Website design symbol',discription:'Modern, responsive websites crafted to elevate your digital presence',keyfeatures:'Custom design, mobile optimization, SEO-friendly development, E-commerce solutions',btn:'Start Your Project'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Website Design and Development',icon:'Website design symbol',discription:'Modern, responsive websites crafted to elevate your digital presence',keyfeatures:'Custom design, mobile optimization, SEO-friendly development, E-commerce solutions',btn:'Start Your Project', btnClass:'web-development'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Digital Marketing Services',icon:'Digital marketing/analytics symbol',discription:' Results-driven digital marketing strategies to boost your online presence and growth',keyfeatures:'SEO, social media marketing, PPC campaigns, content marketing',btn:'Grow Your Business '}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Digital Marketing Services',icon:'Digital marketing/analytics symbol',discription:' Results-driven digital marketing strategies to boost your online presence and growth',keyfeatures:'SEO, social media marketing, PPC campaigns, content marketing',btn:'Grow Your Business ', btnClass:'digital-marketing'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Custom Software Development',icon:'Custom code symbol',discription:'Custom software solutions tailored to your business needs',keyfeatures:' Web, mobile, desktop applications',btn:'Learn More'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Custom Software Development',icon:'Custom code symbol',discription:'Custom software solutions tailored to your business needs',keyfeatures:' Web, mobile, desktop applications',btn:'Learn More', btnClass:'custom-software'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Cloud Solutions',icon:'Cloud computing symbol',discription:'Secure and scalable cloud infrastructure services',keyfeatures:'Migration, optimization, management',btn:'Explore Cloud Services'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Cloud Solutions',icon:'Cloud computing symbol',discription:'Secure and scalable cloud infrastructure services',keyfeatures:'Migration, optimization, management',btn:'Explore Cloud Services', btnClass:'cloud-solutions'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Cybersecurity Services',icon:'Shield/security symbol',discription:'Comprehensive security solutions for your digital assets',keyfeatures:'Assessment, implementation, monitoring',btn:' View Security Solutions'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Cybersecurity Services',icon:'Shield/security symbol',discription:'Comprehensive security solutions for your digital assets',keyfeatures:'Assessment, implementation, monitoring',btn:' View Security Solutions', btnClass:'web-development'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'IT Consulting',icon:'Strategy/consulting symbol',discription:'Strategic technology consulting for business growth ',keyfeatures:'Digital transformation, IT strategy, roadmap',btn:'Get Expert Advice'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'IT Consulting',icon:'Strategy/consulting symbol',discription:'Strategic technology consulting for business growth ',keyfeatures:'Digital transformation, IT strategy, roadmap',btn:'Get Expert Advice', btnClass:'web-development'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Network Solutions',icon:'Network connectivity symbol',discription:'Reliable network infrastructure and management',keyfeatures:' Design, implementation, support',btn:'Discover Networks'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Network Solutions',icon:'Network connectivity symbol',discription:'Reliable network infrastructure and management',keyfeatures:' Design, implementation, support',btn:'Discover Networks', btnClass:'web-development'}}"></ng-container>
                 <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Technical Support',icon:'Support/help symbol',discription:' 24/7 technical support and maintenance services',keyfeatures:' Issue resolution, maintenance, monitoring',btn:'View Support Plans'}}"></ng-container>
+                    [ngTemplateOutletContext]="{details:{header:'Technical Support',icon:'Support/help symbol',discription:' 24/7 technical support and maintenance services',keyfeatures:' Issue resolution, maintenance, monitoring',btn:'View Support Plans', btnClass:'web-development'}}"></ng-container>
             </div>
         </div>
     </section>
