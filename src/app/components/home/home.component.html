@@ -10,7 +10,7 @@
     </section>
     <section class="value-proposition-section">
         <h2>Why Choose Us?</h2>
-        <div class="l1" class="list-container-1" >
+        <div class="l1" class="list-container-1">
             <ul>
                 <li>Comprehensive IT Solutions Tailored to Your Needs</li>
                 <li>Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</li>
@@ -30,8 +30,7 @@
                 <ng-template #servicesTemplate let-details="details">
                     <section>
                         <h4>{{details.header}}</h4>
-                        <!-- <img src="/images/gallery/anon-recruitment-2024/14.png" alt=""> -->
-                        <img class="img"  src="{{details.icon }}" alt="">
+                        <img class="img" src="{{details.icon }}" alt="">
                         <p>{{details.discription}}</p>
                         <p>{{details.keyfeatures}}</p>
                         <button class="{{details.btnClass}}" routerLink="{{details.btnClass}}">{{details.btn}}</button>
@@ -134,7 +133,5 @@
                 </small>
             </div>
         </section>
-
-
     </section>
 </div>
