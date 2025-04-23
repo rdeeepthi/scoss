@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent, ContactComponent, EventsComponent, GalleryComponent, HomeComponent, ServiceComponent, UnderConstructionComponent } from './components';
 import { DigiComponent } from './components/digi/digi.component';
 import { WebdesignservicesComponent } from './components/webdesignservices/webdesignservices.component';
+import { ItinfrastructureservicesComponent } from './components/itinfrastructureservices/itinfrastructureservices.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'service', component: UnderConstructionComponent },
   { path: 'digital-marketing', component: DigiComponent },
   { path: 'web-development', component: WebdesignservicesComponent },
+  { path: 'it-infrastructure',component:ItinfrastructureservicesComponent},
   { path: 'home', redirectTo: '' },
   { path: '**', redirectTo: '' },
 ];
