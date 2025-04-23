@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent, ContactComponent, EventsComponent, GalleryComponent, HomeComponent, ServiceComponent, UnderConstructionComponent } from './components';
-import { DigiComponent } from './components/digi/digi.component';
+import { DigiComponent } from './components/digital-marketing/digi.component';
 import { WebdesignservicesComponent } from './components/webdesignservices/webdesignservices.component';
 import { ItinfrastructureservicesComponent } from './components/itinfrastructureservices/itinfrastructureservices.component';
 
