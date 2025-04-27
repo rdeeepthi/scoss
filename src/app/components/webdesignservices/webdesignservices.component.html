@@ -4,47 +4,32 @@
         <p>Transform your business with professional Web Solutions. From simple business websites to complex e-commerce
             solutions, we help you establish a powerful online presence.</p>
         <div class="btn">
-            <button>Get Free Consultation</button>
+            <a>Get Free Consultation</a>
         </div>
     </section>
-    <div class="our-web-services">
+    <section class="our-web-services">
         <h2>Our Web Services</h2>
         <p>We provide a wide range of services to meet your unique business needs:</p>
-        <ng-template #ourwebservices let-details="details">
-            <section>
-                <h2>{{details.header}}</h2>
-                <p>{{details.pargraph}}</p>
-            </section>
-        </ng-template>
-        <ng-container [ngTemplateOutlet]="ourwebservices"
-            [ngTemplateOutletContext]="{details:{header:'Custom Website Design',pargraph:'Unique and engaging designs that reflect your brand.'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebservices"
-            [ngTemplateOutletContext]="{details:{header:'E-Commerce Website Development',pargraph:'Build online stores with seamless shopping experiences.'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebservices"
-            [ngTemplateOutletContext]="{details:{header:'CMS-Based Websites',pargraph:'Easy-to-manage websites using WordPress, Joomla, etc. '}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebservices"
-            [ngTemplateOutletContext]="{details:{header:'Website Redesign',pargraph:'Upgrade outdated websites for modern appeal and functionality'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebservices"
-            [ngTemplateOutletContext]="{details:{header:'Maintenance and Support',pargraph:'Keep your site updated and secure with ongoing support.'}}"></ng-container>
-    </div>
-    <div class="our-websites-apart">
+        <section>
+        <div class="web-service" *ngFor="let service of webServices">
+                <h2>{{service.header}}</h2>
+                <p>{{service.paragraph}}</p>
+            </div>
+        </section>
+    </section>
+    <section class="our-websites-apart">
         <h2> Your Trusted Website Designer in Tumkur</h2>
         <h3>What Sets Our Websites Apart?</h3>
-        <ng-template #ourwebsitesapart let-details="details">
-            <section>
-                <h2>{{details.header}}</h2>
-                <p>{{details.pargraph}}</p>
-            </section>
-        </ng-template>
-        <ng-container [ngTemplateOutlet]="ourwebsitesapart"
-            [ngTemplateOutletContext]="{details:{header:'Custom Design',pargraph:'Websites tailored to your brand and business needs'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebsitesapart"
-            [ngTemplateOutletContext]="{details:{header:'Mobile Optimization',pargraph:'Responsive design for seamless access across devices. '}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebsitesapart"
-            [ngTemplateOutletContext]="{details:{header:'Speed and Performance',pargraph:'Fast-loading websites for better user engagement. '}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="ourwebsitesapart"
-            [ngTemplateOutletContext]="{details:{header:'Scalable Solutions',pargraph:'Build a site that grows with your business. '}}"></ng-container>
-    </div>
+        <section>
+            <div class="web-aparts" *ngFor="let apart of websitesApart">
+                <div class="image-container">
+                <img src="images/icons/green-tick.webp" alt="">
+            </div>
+                <h2>{{apart.header}}</h2>
+                <p>{{apart.paragraph}}</p>
+            </div>
+        </section>
+    </section>
     <section class="start-your-web-project">
         <h2> Ready to Start Your Web Project?</h2>
         <p>Take the first step towards an impactful online presence. Contact us today for a free consultation and quote.
