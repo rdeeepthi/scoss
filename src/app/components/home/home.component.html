@@ -1,143 +1,3 @@
-<!-- <div class="wrapper">
-    <section class="hero-section">
-        <h1>Leading IT Services Company in Tumkur | Digital Transformation Services</h1>
-        <p>Transform your business with our comprehensive IT services, custom software
-            development, and technology consulting. Get expert solutions tailored to your needs.</p>
-        <div class="btn">
-            <button routerLink="contact">Get a Free IT Consultation</button>
-            <button routerLink="service">Explore Our Services</button>
-        </div>
-    </section>
-    <section class="value-proposition-section">
-        <h2>Why Choose Us?</h2>
-        <div class="l1" class="list-container">
-            <ul>
-                <li>Comprehensive IT Solutions Tailored to Your Needs</li>
-                <li>Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</li>
-                <li>Affordable and Scalable Digital Marketing Services</li>
-            </ul>
-        </div>
-        <div class="btn">
-            <button>Schedule a Free IT Consultation</button>
-        </div>
-    </section>
-    <section class="services-overview-section">
-        <div>
-            <h2>Our IT Services</h2>
-            <p style="font-size: 20px;">Explore our wide range of IT services designed to support your business needs:
-            </p>
-            <div class="services">
-                <ng-template #servicesTemplate let-details="details">
-                    <section>
-                        <h4>{{details.header}}</h4>
-                        <img class="img" src="{{details.icon }}" alt="">
-                        <p>{{details.discription}}</p>
-                        <p>{{details.keyfeatures}}</p>
-                        <button class="{{details.btnClass}}" routerLink="{{details.btnClass}}">{{details.btn}}</button>
-                    </section>
-                </ng-template>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Website Design and Development',icon:'/images/gallery/anon-recruitment-2024/14.png',discription:'Modern, responsive websites crafted to elevate your digital presence',keyfeatures:'Custom design, mobile optimization, SEO-friendly development, E-commerce solutions',btn:'Start Your Project', btnClass:'web-development'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Digital Marketing Services',icon:'/images/gallery/anon-recruitment-2024/15.png',discription:' Results-driven digital marketing strategies to boost your online presence and growth',keyfeatures:'SEO, social media marketing, PPC campaigns, content marketing',btn:'Grow Your Business ', btnClass:'digital-marketing'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Custom Software Development',icon:'/images/gallery/anon-recruitment-2024/16.png',discription:'Custom software solutions tailored to your business needs',keyfeatures:' Web, mobile, desktop applications',btn:'Learn More', btnClass:'custom-software'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Cloud Solutions',icon:'/images/gallery/anon-recruitment-2024/17.png',discription:'Secure and scalable cloud infrastructure services',keyfeatures:'Migration, optimization, management',btn:'Explore Cloud Services', btnClass:'cloud-solutions'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Cybersecurity Services',icon:'/images/gallery/anon-recruitment-2024/18.png',discription:'Comprehensive security solutions for your digital assets',keyfeatures:'Assessment, implementation, monitoring',btn:' View Security Solutions', btnClass:'web'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'IT Consulting',icon:'/images/gallery/anon-recruitment-2024/19.png',discription:'Strategic technology consulting for business growth ',keyfeatures:'Digital transformation, IT strategy, roadmap',btn:'Get Expert Advice', btnClass:'web-development'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Network Solutions',icon:'/images/gallery/anon-recruitment-2024/20.png',discription:'Reliable network infrastructure and management',keyfeatures:' Design, implementation, support',btn:'Discover Networks', btnClass:'web-development'}}"></ng-container>
-                <ng-container [ngTemplateOutlet]="servicesTemplate"
-                    [ngTemplateOutletContext]="{details:{header:'Technical Support',icon:'/images/gallery/anon-recruitment-2024/21.png',discription:' 24/7 technical support and maintenance services',keyfeatures:' Issue resolution, maintenance, monitoring',btn:'View Support Plans', btnClass:'web-development'}}"></ng-container>
-            </div>
-        </div>
-    </section>
-    <section class="about-us-section">
-        <h2>Your Trusted IT Partner in Tumkur</h2>
-        <p>Based in Tumkur, we are a team of dedicated IT professionals committed to delivering high-quality
-            services. Our mission is to help businesses thrive in today’s digital era with reliable and innovative
-            IT solutions.</p>
-        <div class="img2">
-            <img src="/images/gallery/anon-recruitment-2024/22.jpg" alt="Company images">
-        </div>
-
-        <h3>Serving Industries Across Tumakuru</h3>
-        <div class="list-container">
-            <ul>
-                <li>Manufacturing Units</li>
-                <li>Educational Institutions</li>
-                <li>Healthcare Facilities</li>
-                <li>Retail Businesses</li>
-                <li>Professional Services</li>
-                <li>Small & Medium Enterprises</li>
-            </ul>
-        </div>
-        <h3>Our Service Areas in Tumakuru Region</h3>
-        <div class="list-container">
-            <ul>
-                <li>Tumkur City</li>
-                <li>Sira</li>
-                <li>Gubbi</li>
-                <li>Tiptur</li>
-                <li>Kunigal</li>
-                <li>Surrounding Industrial Areas</li>
-            </ul>
-        </div>
-        <h2> Why Partner with Us for Your IT Needs?</h2>
-        <h3> Local Expertise</h3>
-        <div class="list-container">
-            <ul>
-                <li>Based in Tumkur</li>
-                <li>Understanding of local business environment</li>
-                <li>Bilingual support team: 24/7 technical support in Kannada and English</li>
-                <li>Regular client visits</li>
-            </ul>
-        </div>
-    </section>
-    <section class="call-to-action-section">
-        <h2>Start Your Digital Journey Today</h2>
-        <p>Schedule a free consultation with our experts and discover how we can help you achieve your
-            technology goals.</p>
-        <div class="btn">
-            <button>Book Free Consultation</button>
-        </div>
-        <h2> Get in Touch with Us Today</h2>
-        <p> Ready to take your business to the next level? Contact us to discuss your IT needs.</p>
-        <div class="list-container">
-            <ul>
-                <li> Phone:9113030506</li>
-                <li>
-                    <p>Email: <a href="mailto:scossservices@gmail.com">scossservices&#64;gmail.com</a></p>
-                </li>
-                <li>Address: SLN Krupa 1st Floor Mahalakshminagar 2nd Stage, 2nd Main Rd, Batawadi, Tumakuru, Karnataka
-                    572103</li>
-            </ul>
-        </div>
-        <h5>Map Integration</h5>
-        <section class="map-section">
-            <h2>Our Location</h2>
-            <div class="map-container">
-                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=77.0980%2C13.3240%2C77.1020%2C13.3270&layer=mapnik&marker=13.3255%2C77.1003"
-                    style="border-radius: 12px;">
-                </iframe>
-                <br />
-                <small>
-                    <a href="https://www.openstreetmap.org/?mlat=13.3255&mlon=77.1003#map=18/13.3255/77.1003"
-                        target="_blank" rel="noopener noreferrer">
-                        View Larger Map
-                    </a>
-                </small>
-            </div>
-        </section>
-    </section>
-</div> -->
-
-
-
 <div class="wrapper">
 
     <section class="hero-section">
@@ -145,8 +5,11 @@
         <p>Transform your business with our comprehensive IT services, custom software
             development, and technology consulting. Get expert solutions tailored to your needs.</p>
         <div>
-            <button class="get-it">Get a Free IT Consultation </button>
-            <button class="explore">Explore Our Services</button>
+            <a class="get-it">Get a Free IT Consultation </a>
+            <a class="explore" routerLink="service"><span>Explore Our Services</span><svg xmlns="http://www.w3.org/2000/svg"
+                    height="24px" viewBox="0 -960 960 960" width="24px" fill="#0000FF">
+                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                </svg></a>
         </div>
     </section>
 
@@ -154,15 +17,18 @@
     <section class="value-proposition-section">
         <h2>Why Choose Us?</h2>
         <ul>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPS6FSv1U6tuns65eYi291cfOMFsDTRrnHw&s"
-                    alt="">Comprehensive IT Solutions Tailored to Your Needs</li>
-            <li><img src="https://certumventures.in/wp-content/uploads/2023/01/managed-services-slider2-1024x682-1.jpg">
-                Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</li>
-            <li><img src="https://img.freepik.com/premium-vector/isometric-flat-3d-illustration-social-media-strategy-concept-digital-marketing-startup-business_18660-4448.jpg?semt=ais_hybrid"
-                    alt="">Affordable and Scalable Digital Marketing Services</li>
+            <li><img src="images/services icon/comprehensive-it-solutions.png"
+                    alt=""><span hidden>Comprehensive IT Solutions Tailored to Your Needs</span></li>
+            <li><img src="images/services icon/affordable-and-scalable.png">
+                <span hidden>Expertise in IT Infrastructure, Cloud Solutions and Cybersecurity</span></li>
+            <li><img src="images/services icon/expertise-in-it.png"
+                    alt=""><span hidden>Affordable and Scalable Digital Marketing Services</span></li>
         </ul>
         <div>
-            <button>Schedule a Free IT Consultation →</button>
+            <a><span>Schedule a Free IT Consultation</span><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+            </svg></a>
         </div>
     </section>
 
@@ -173,11 +39,16 @@
 
         <div class="services">
             <div class="service-card" appearance="outlined" *ngFor="let data of servicesData">
-                <b><p class="service-heading">{{data.title}}</p></b>
+                <b>
+                    <p hidden class="service-heading">{{data.title}}</p>
+                </b>
                 <img mat-card-image [src]="data.iconURL" alt="">
                 <p>{{data.description}} </p>
                 <p>{{data.features}}</p>
-                <button>{{data.buttonName}}</button>
+                <a routerLink="{{data.routerLink}}"><span>{{data.buttonName}}</span><svg xmlns="http://www.w3.org/2000/svg"
+                    height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                </svg></a>
             </div>
         </div>
 
@@ -186,7 +57,7 @@
 
     <section class="about-us-section">
         <section class="trusted-partner">
-            <section  class="content">
+            <section class="content">
                 <h2>Your Trusted IT Partner in Tumkur</h2>
                 <p>Based in Tumkur, we are a team of dedicated IT professionals committed to delivering high-quality
                     services. Our mission is to help businesses thrive in today’s digital era with reliable and
@@ -203,24 +74,18 @@
             <div>
                 <h2>Serving Industries Across Tumakuru</h2>
                 <ul>
-                    <li><img src="images/icons/Manufacturing Units.png"
-                            alt="">Manufacturing Units</li>
-                    <li><img src="images\icons\Educational Institutions.png"
-                            alt="">Educational Institutions</li>
-                    <li><img src="images\icons\Healthcare Facilities.webp"
-                            alt="">Healthcare Facilities</li>
-                    <li><img src="images\icons\Retail Businesses.png"
-                            alt="">Retail Businesses</li>
-                    <li><img src="images\icons\Professional Services.png"
-                            alt="">Professional Services</li>
-                    <li><img src="images\icons\Small & Medium Enterprises.png"
-                            alt="">Small & Medium Enterprises</li>
+                    <li><img src="images/icons/Manufacturing Units.png" alt="">Manufacturing Units</li>
+                    <li><img src="images\icons\Educational Institutions.png" alt="">Educational Institutions</li>
+                    <li><img src="images\icons\Healthcare Facilities.webp" alt="">Healthcare Facilities</li>
+                    <li><img src="images\icons\Retail Businesses.png" alt="">Retail Businesses</li>
+                    <li><img src="images\icons\Professional Services.png" alt="">Professional Services</li>
+                    <li><img src="images\icons\Small & Medium Enterprises.png" alt="">Small & Medium Enterprises</li>
 
                 </ul>
             </div>
         </section>
         <section>
-            <h3>Serving Industries Across Tumakuru</h3>
+            <h3>Our Service Areas in Tumakuru Region</h3>
             <div>
                 <ul>
                     <li>Tumkur City</li>
@@ -239,36 +104,42 @@
 
             <h3>Local Expertise</h3>
             <ul>
-                <li><img src="images/icons/green-tick.webp"
-                        alt="">Based in Tumkur</li>
-                <li><img src="images/icons/green-tick.webp"
-                        alt="">Understanding of local business environment</li>
-                <li><img src="images/icons/green-tick.webp"
-                        alt="">Bilingual support team: 24/7 technical support in Kannada and English</li>
-                <li><img src="images/icons/green-tick.webp"
-                        alt="">Regular client visits</li>
+                <li><img src="images/icons/green-tick.webp" alt="">Based in Tumkur</li>
+                <li><img src="images/icons/green-tick.webp" alt="">Understanding of local business environment</li>
+                <li><img src="images/icons/green-tick.webp" alt="">Bilingual support team: 24/7 technical support in
+                    Kannada and English</li>
+                <li><img src="images/icons/green-tick.webp" alt="">Regular client visits</li>
             </ul>
         </section>
     </section>
 
+
+    <section class="our-clients">
+        <h3>Our Clients</h3>
+            <ul>
+                <li><a href=""><img src="images/clients/codeeasy-logo.png" alt=""></a></li>
+                <li><a href="https://goasos.com/"><img src="images/clients/goas-logo.webp" alt=""></a></li>
+                <li><a href=""><img src="images/clients/agritech-logo.jpg" alt=""></a></li>
+                <li><a href=""><img src="images/clients/anon-logo.jpg" alt=""></a></li>
+                <li><a href="https://www.questalliance.net/"><img src="images/clients/quest-alliance-logo.png" alt=""></a></li>
+            </ul>
+    </section>
 
     <section class="call-to-action">
         <div>
             <h2>Start Your Digital Journey Today</h2>
             <p>Schedule a free consultation with our experts and discover how we can help you achieve your
                 technology goals.</p>
-            <button>Book Free Consultation</button>
+            <a>Book Free Consultation</a>
         </div>
         <div>
             <h2>Get in Touch with Us Today</h2>
             <p>Ready to take your business to the next level? Contact us to discuss your IT needs.</p>
             <ul>
-                <li><img src="images\icons\phone.webp"
-                        alt="">9113030506 / 8971417455</li>
-                <li><img src="images\icons\mail.png"
-                        alt="">Email: scossservices&#64;gmail.com</li>
-                <li><img src="images\icons\location.png"
-                        alt="">Ground Floor SLN Krupa, 2nd Stage 2nd Main Mahalakshmi Nagar, Batawadi, Tumkur - 572103
+                <li><img src="images\icons\phone.webp" alt="">9113030506 / 8971417455</li>
+                <li><img src="images\icons\mail.png" alt="">Email: scossservices&#64;gmail.com</li>
+                <li><img src="images\icons\location.png" alt="">Ground Floor SLN Krupa, 2nd Stage 2nd Main Mahalakshmi
+                    Nagar, Batawadi, Tumkur - 572103
                 </li>
                 <li>
                     <iframe

@@ -11,12 +11,13 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'event', component: EventsComponent },
   { path: 'gallery', component: GalleryComponent },
-  { path: 'service', component: UnderConstructionComponent },
+  { path: 'service', component: ServiceComponent },
   { path: 'digital-marketing', component: DigiComponent },
-  { path: 'web-development', component: WebdesignservicesComponent },
-  { path: 'it-infrastructure',component:ItinfrastructureservicesComponent},
+  { path: 'website-development', component: WebdesignservicesComponent },
+  { path: 'it-consulting',component:ItinfrastructureservicesComponent},
+  { path: 'under-construction',component:UnderConstructionComponent},
   { path: 'home', redirectTo: '' },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: 'under-construction' },
 ];
 
 @NgModule({
