@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ServicesOffered } from '../../common/models/services-offered';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'scoss-service',
@@ -14,7 +15,7 @@ export class ServiceComponent {
       description:'Modern, responsive websites crafted to elevate your digital presence ',
       features:'Custom design, mobile optimization, SEO-friendly development, E-commerce solutions',
       buttonName:'Start Your Project',
-      routerLink:'website-development'
+      routerLink:'/website-development'
   
     },
     {
@@ -23,7 +24,7 @@ export class ServiceComponent {
       description:'Results-driven digital marketing strategies to boost your online presence and growth ',
       features:'SEO, social media marketing, PPC campaigns, content marketing',
       buttonName:'Grow Your Business',
-      routerLink:'digital-marketing'
+      routerLink:'/digital-marketing'
   
     },
     {
@@ -32,7 +33,7 @@ export class ServiceComponent {
       description:'Custom software solutions tailored to your business needs',
       features:'Web, mobile, desktop applications',
       buttonName:'Learn More',
-      routerLink:'custom-software-development'
+      routerLink:'/custom-software-development'
   
     },
     {
@@ -41,7 +42,7 @@ export class ServiceComponent {
       description:'Secure and scalable cloud infrastructure services',
       features:'Migration, optimization, management',
       buttonName:'Explore Cloud Services',
-      routerLink:'cloud-solutions'
+      routerLink:'/cloud-solutions'
   
     },
     {
@@ -50,7 +51,7 @@ export class ServiceComponent {
       description:'Comprehensive security solutions for your digital assets',
       features:'Assessment, implementation, monitoring',
       buttonName:'View Security Solutions',
-      routerLink:'cyber-security'
+      routerLink:'/cyber-security'
   
     },
     {
@@ -59,7 +60,7 @@ export class ServiceComponent {
       description:'Strategic technology consulting for business growth',
       features:'Digital transformation, IT strategy, roadmap',
       buttonName:'Get Expert Advice',
-      routerLink:'it-consulting'
+      routerLink:'/it-consulting'
   
     },
     {
@@ -68,7 +69,7 @@ export class ServiceComponent {
       description:'Reliable network infrastructure and management',
       features:'Design, implementation, support',
       buttonName:'Discover Networks',
-      routerLink:'network-solutions'
+      routerLink:'/it-consulting'
   
     },
     {
@@ -77,7 +78,7 @@ export class ServiceComponent {
       description:'24/7 technical support and maintenance services',
       features:'Issue resolution, maintenance, monitoring',
       buttonName:'View Support Plans',
-      routerLink:'technical-support'
+      routerLink:'/it-consulting'
   
     }
   ];

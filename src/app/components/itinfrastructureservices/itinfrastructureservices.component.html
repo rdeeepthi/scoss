@@ -1,67 +1,100 @@
 <div class="wrapper">
+    <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Robust IT Infrastructure Services in Tumkur</h1>
-        <h5>Transform your business with our comprehensive IT infrastructure services. We deliver scalable,secure, and
-            efficient solutions that drive innovation and growth while reducing operational costs.</h5>
-        <div class="btn">
-            <button>Get a Free IT Consultation</button>
+        <div class="container">
+            <h1>Robust IT Infrastructure Services in Tumkur</h1>
+            <p>Transform your business with our comprehensive IT infrastructure services. We deliver scalable, secure, and efficient solutions that drive innovation and growth while reducing operational costs.</p>
+            <a href="#" class="btn">Get a Free IT Consultation</a>
         </div>
     </section>
-    <div class="infrastructure-services">
-        <h1>Our Core Infrastructure Services</h1>
-        <p>We provide cutting-edge IT infrastructure solutions designed to meet your business needs:</p>
-        <ng-template #infrastructureservices let-details="details">
-            <section>
-                <h2>{{details.header}}</h2>
-                <p>{{details.pargraph}}</p>
-            </section>
-        </ng-template>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:'Managed IT Services',pargraph:'24/7 monitoring, maintenance, and support for your IT systems.'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:'Cloud Computing Solutions',pargraph:'Scalable and cost-effective cloud infrastructure for businesses'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:'Network & Security Services',pargraph:' Secure, high-performance networks with firewall and endpoint protection.'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:'Server & Storage Management',pargraph:'Reliable server deployment, maintenance, and data backup solutions.'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:' Enterprise IT Support',pargraph:' Custom IT support packages tailored to your business requirements.'}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:'Hardware and Software Procurement',pargraph:' Assisting clients in acquiring the right technology tools. '}}"></ng-container>
-        <ng-container [ngTemplateOutlet]="infrastructureservices"
-            [ngTemplateOutletContext]="{details:{header:' IoT and Smart Infrastructure',pargraph:' IoT device setup and integration. '}}"></ng-container>
-    </div>
-    <section class="it-infrastructure-matters">
-        <h2>Why IT Infrastructure Matters?</h2>
-        <ul class="list-continer">
-            <li>Improves business efficiency & productivity</li>
-            <li>Reduces downtime and enhances security</li>
-            <li>Scalable solutions for business growth</li>
-        </ul>
+
+    <!-- Core Infrastructure Services -->
+    <section class="core-services">
+        <div class="container">
+            <h2>Our Core Infrastructure Services</h2>
+            <p>We provide cutting-edge IT infrastructure solutions designed to meet your business needs:</p>
+            
+            <div class="services-grid">
+                <div class="service-card" *ngFor="let service of infrastructureServices">
+                    <h3>{{service.header}}</h3>
+                    <p>{{service.paragraph}}</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="trusted-it-partner">
-        <h2>Your Trusted IT Partner in Tumkur</h2>
-        <h3>Ready to Transform Your Infrastructure?</h3>
-        <p>Schedule a free infrastructure assessment with our experts. We'll analyze your current setup and provide
-            actionable recommendations for improvement.</p>
-        <h4>Contact Form:</h4>
-        <ul class="list-continer">
-            <li>Name</li>
-            <li>Email</li>
-            <li>Phone</li>
-            <li>Company</li>
-        </ul>
-        <h2>Or call us directly: [Phone Number]</h2>
-        <h2>Address:</h2>
+
+    <!-- Why IT Infrastructure Matters -->
+    <section class="infrastructure-matters">
+        <div class="container">
+            <h2>Why IT Infrastructure Matters?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card" *ngFor="let benefit of infrastructureBenefits">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                    </svg>
+                    <p>{{benefit}}</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Trusted IT Partner Section -->
+    <section class="trusted-partner">
+        <div class="container">
+            <h2>Your Trusted IT Partner in Tumkur</h2>
+            <h3>Ready to Transform Your Infrastructure?</h3>
+            <p>Schedule a free infrastructure assessment with our experts. We'll analyze your current setup and provide actionable recommendations for improvement.</p>
+            
+            <div class="contact-form">
+                <h3>Contact Form:</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" class="form-control" required>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Request Assessment</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Or call us directly: 9113030506 / 8971417455</h3>
+                <p>Email: scossservice&#64;gmail.com</p>
+                <p>Address: Ground Floor SLN Krupa, 2nd Stage 2nd Main Mahalakshmi Nagar, Batawadi, Tumkur - 572103</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services -->
     <section class="related-it-services">
-        <ul class="list-continer">
-            <li>Website Design and Development</li>
-            <li>Mobile App Development</li>
-            <li>Cybersecurity Services</li>
-        </ul>
-        <div class="btn">
-            <button routerLink="home">Homepage</button>
+        <div class="container">
+            <h2>Related Services</h2>
+            
+            <ul class="services-list">
+                <li>Website Design and Development</li>
+                <li>Mobile App Development</li>
+                <li>Cybersecurity Services</li>
+                <li>Cloud Computing Solutions</li>
+                <li>IT Consulting</li>
+            </ul>
+            
+            <a routerLink="/home" class="btn btn-outline">Homepage</a>
         </div>
     </section>
 </div>
