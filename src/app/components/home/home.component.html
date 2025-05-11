@@ -42,7 +42,9 @@
                 <b>
                     <p hidden class="service-heading">{{data.title}}</p>
                 </b>
-                <img mat-card-image [src]="data.iconURL" alt="">
+                <div class="image-container">
+                    <img src={{data.iconURL}} alt="">
+                </div>
                 <p>{{data.description}} </p>
                 <p>{{data.features}}</p>
                 <a routerLink="{{data.routerLink}}"><span>{{data.buttonName}}</span><svg xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +93,7 @@
                     <li>Tumkur City</li>
                     <li>Sira</li>
                     <li>Gubbi</li>
-                    <li>Tiptu</li>
+                    <li>Tiptur</li>
                     <li>Kunigal</li>
                     <li>Surrounding Industrial Areas</li>
                 </ul>
