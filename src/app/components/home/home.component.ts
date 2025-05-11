@@ -71,7 +71,7 @@ export class HomeComponent {
       description: 'Reliable network infrastructure and management',
       features: 'Design, implementation, support',
       buttonName: 'Discover Networks',
-      routerLink: 'network-solutions'
+      routerLink: 'it-consulting'
 
     },
     {
@@ -80,7 +80,7 @@ export class HomeComponent {
       description: '24/7 technical support and maintenance services',
       features: 'Issue resolution, maintenance, monitoring',
       buttonName: 'View Support Plans',
-      routerLink: 'technical-support'
+      routerLink: 'it-consulting'
 
     }
   ];
