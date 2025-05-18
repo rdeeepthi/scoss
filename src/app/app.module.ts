@@ -15,6 +15,8 @@ import { GalleryUnitComponent } from './components/gallery-unit/gallery-unit.com
 import { DigiComponent } from './components/digital-marketing/digi.component';
 import { ItinfrastructureservicesComponent } from './components/itinfrastructureservices/itinfrastructureservices.component';
 import { WebdesignservicesComponent } from './components/webdesignservices/webdesignservices.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { WebdesignservicesComponent } from './components/webdesignservices/webde
     GalleryUnitComponent,
     DigiComponent,
     ItinfrastructureservicesComponent,
-    WebdesignservicesComponent
+    WebdesignservicesComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ScossMatModule,
-    ScossCommonModule
+    ScossCommonModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
